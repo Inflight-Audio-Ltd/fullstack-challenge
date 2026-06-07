@@ -1,0 +1,139 @@
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app h1 {
+  color: var(--text-h);
+  font-family: var(--heading);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.add-task-button {
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 0.5rem;
+  background: var(--accent-bg);
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.add-task-button:hover {
+  border-color: var(--accent);
+  background: var(--bg);
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.task-card:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.task-title {
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.task-time {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.task-description {
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  border: 1px solid var(--accent-border);
+  border-radius: 0.75rem;
+  background: var(--accent-bg);
+}
+
+.timer-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+}
+
+.timer-value {
+  font-family: var(--mono);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.error-state {
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.error-state h1 {
+  margin-bottom: 0.75rem;
+}
+
+.error-state p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
